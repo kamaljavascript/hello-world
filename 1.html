@@ -7,11 +7,18 @@
 	</head>
 	<body>
 
-		<button type="button" onclick="document.getElementById('Date').innerHTML = Date()">
-			Today's Date & exact Time
+		<button type="button" onclick="document.getElementById('Date').innerHTML = new Date().toDateString()">
+			Today's Date
+		</button>
+
+		<button type="button" onclick="document.getElementById('Time').innerHTML = new Date().toLocaleTimeString()">
+			Time
 		</button>
 
 		<p id="Date">
+		</p>
+
+		<p id="Time">
 		</p>
 
 	</body>
