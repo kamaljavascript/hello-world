@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Script tag in Body
+    </title>
+  </head>
+  <body>
+
+    <p id="x">
+      Script Tag.
+    </p>
+
+    <button type="button" onclick="y()">
+      Try
+    </button>
+
+    <script>
+    function y() {
+      document.getElementById("x").innerHTML = "It works.";
+    }
+    </script>
+
+  </body>
+</html>
