@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Equation in Values</title>
+	</head>
+	<body>
+		<p>adding <strong>"JavaScript" + " " + "Arithmetic"</strong> is:</p>
+		<p id="1"></p>
+		<p>adding <strong>1 + 2 + 3</strong> is:</p>
+		<p id="2"></p>
+		<p>adding <strong>"1" + 2 + 3</strong> is:</p>
+		<p id="3"></p>
+		<p>adding <strong>1 + 2 + "3"</strong> is:</p>
+		<p id="4"></p>
+	</body>
+	<script>
+		let q = "JavaScript" + " " + "Arithmetic";
+		let w = 1 + 2 + 3;
+		let e = "1" + 2 + 3;
+		let r = 1 + 2 + "3";
+		document.getElementById("1").innerHTML = q;
+		document.getElementById("2").innerHTML = w;
+		document.getElementById("3").innerHTML = e;
+		document.getElementById("4").innerHTML = r;
+	</script>
+</html>

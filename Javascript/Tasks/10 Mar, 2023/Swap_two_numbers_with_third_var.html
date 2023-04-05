@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Swap two numbers with third variable.
+		</title>
+	</head>
+	<body>
+		<p>
+			Swap two numbers with third variable.
+		</p>
+		<p>
+			x = 
+			<input type="text" name="x" id="x">
+		</p>
+		<p>
+			y = 
+			<input type="text" name="y" id="y">
+		</p>
+		<button onclick= "swap()">
+			Swap values
+		</button>
+	</body>
+	<script type="text/javascript">
+		function swap() {
+			let x1 = document.getElementById('x').value;
+			let y1 = document.getElementById('y').value;
+			let z;
+			z = x1;
+			x1 = y1;
+			y1 = z;
+			document.getElementById('x').value = x1
+			document.getElementById('y').value = y1
+		}
+	</script>
+</html>

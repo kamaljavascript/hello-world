@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      One function can executed many statements.
+    </title>
+  </head>
+  <body>
+    <p id="x"></p>
+    <p id="y"></p>
+    <button type="button" onclick="Function()">
+      Show
+    </button>
+  </body>
+  <script>
+    function Function() {
+      document.getElementById("x").innerHTML = "Statement 1";
+      document.getElementById("y").innerHTML = "Statement 2";
+    }
+  </script>
+</html>

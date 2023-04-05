@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Using var, let & Nothing for Declaring a Variables</title>
+	</head>
+	<body>
+		<p>
+			q = 32
+		</p>
+		<p>
+			w = 55
+		</p>
+		<p>
+			e = q + w
+		</p>
+		<p id="1"></p>
+		<br>
+		<br>
+		<p>
+			a = 32
+		</p>
+		<p>
+			s = 55
+		</p>
+		<p>
+			d = a + s
+		</p>
+		<p id="2"></p>
+		<br>
+		<br>
+		<p>
+			z = 32
+		</p>
+		<p>
+			x = 55
+		</p>
+		<p>
+			c = z + x
+		</p>
+		<p id="3"></p>
+	</body>
+	<script>
+		// var is used here for creating Variables.
+		var q = 32;
+		var w = 55;
+		var e = q + w;
+		document.getElementById("1").innerHTML = "e = " + e;
+
+		// let is used here for creating Variables.
+		let a = 32;
+		let s = 55;
+		let d = a + s;
+		document.getElementById("2").innerHTML = "d = " + d;
+
+		// Nothing is used here for creating Variables.
+		z = 32;
+		x = 55;
+		c = z + x;
+		document.getElementById("3").innerHTML = "c = " + c;
+	</script>
+</html>

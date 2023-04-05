@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Displaying calculations of two numbers
+		</title>
+	</head>
+	<body>
+		<p>
+			Please input two numbers.
+		</p>
+		<input type="text" id="x" value="0">
+		<br>
+		<input type="text" id="y" value="0">
+		<br>
+		<p>
+			<button onclick="add();">
+				add
+			</button>
+			,
+			<button onclick="substract();">
+				substract
+			</button>
+			,
+			<button onclick="multiply();">
+				multiply
+			</button>
+			,
+			<button onclick="divide();">
+				divide
+			</button>
+			,
+			<button onclick="exponent();">
+				exponent
+			</button>
+			,
+			<button onclick="X();">
+				X
+			</button>
+		</p>
+		<p id="z"></p>
+	</body>
+	<script type="text/javascript">
+	    function add() {
+		   	let x = +document.getElementById('x').value;
+		   	let y = +document.getElementById('y').value;
+		   	document.getElementById('z').innerHTML="Addition of two values: " + (x+y);
+		   	document.getElementById('z').style.display='block';
+		}
+		function substract() {
+		   	let x = +document.getElementById('x').value;
+		   	let y = +document.getElementById('y').value;
+		   	document.getElementById('z').innerHTML="Substract of two values: " + (x-y);
+		   	document.getElementById('z').style.display='block';
+		}
+		function multiply() {
+		   	let x = +document.getElementById('x').value;
+		   	let y = +document.getElementById('y').value;
+		   	document.getElementById('z').innerHTML="Multiply of two values: " + (x*y);
+		   	document.getElementById('z').style.display='block';
+		}
+		function divide() {
+		   	let x = +document.getElementById('x').value;
+		   	let y = +document.getElementById('y').value;
+		   	document.getElementById('z').innerHTML="Divide of two values: " + (x/y);
+		   	document.getElementById('z').style.display='block';
+		}
+		function exponent() {
+		   	let x = +document.getElementById('x').value;
+		   	let y = +document.getElementById('y').value;
+		   	document.getElementById('z').innerHTML="Exponent of two values: " + Math.pow (x,y);
+		   	document.getElementById('z').style.display='block';
+		}
+		function X() {
+		   	document.getElementById('z').style.display='none';
+		}
+	</script>
+</html>

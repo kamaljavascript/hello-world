@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Using innerHTML.
+		</title>
+	</head>
+	<body>
+
+		<p>28 , 2</p>
+		<p id="x"></p>
+
+		<button onclick= "none()">
+			none
+		</button>
+		<br>
+		<button onclick="add()">
+			add
+		</button>
+		<br>
+		<button onclick= "substract()">
+			substract
+		</button>
+		<br>
+		<button onclick= "multiply()">
+			multiply
+		</button>
+		<br>
+		<button onclick= "divide()">
+			divide
+		</button>
+
+	</body>
+	<script type="text/javascript">
+
+		function none() {
+			document.getElementById('x').style.display='none';
+		}
+
+		function add() {
+			document.getElementById('x').innerHTML=28 + 2;
+			document.getElementById('x').style.display = "block"; 
+		}
+
+		function substract() {
+			document.getElementById('x').innerHTML=28 - 2;
+			document.getElementById('x').style.display = "block"; 
+		}
+
+		function multiply() {
+			document.getElementById('x').innerHTML=28 * 2;
+			document.getElementById('x').style.display = "block"; 
+		}
+
+		function divide() {
+			document.getElementById('x').innerHTML=28 / 2;
+			document.getElementById('x').style.display = "block"; 
+		}
+
+	</script>
+</html>
