@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Changing Inch to feet.
+		</title>
+	</head>
+	<body>
+		<table width="25%">
+			<tbody>
+				<tr>
+					<td colspan="3">
+						Inch to feet.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Inch:
+					</td>
+					<td>
+						<input type="number" id="Inch" value="0">
+					</td>
+					<td rowspan="2">
+						<button onclick="covertTofeet()">covert</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						feet:
+					</td>
+					<td>
+						<input type="number" readonly id="feet" value="0">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+	<script type="text/javascript">
+		function covertTofeet() {
+			let a = document.getElementById('Inch').value;
+			document.getElementById('feet').value = a / 12;
+		} 
+	</script>
+</html>

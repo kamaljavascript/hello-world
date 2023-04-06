@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Changing units m into km.
+		</title>
+	</head>
+	<body>
+		<table width="25%">
+			<tbody>
+				<tr>
+					<td colspan="3">
+						Meter into Kilometer.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Meter:
+					</td>
+					<td>
+						<input type="number" id="meter" value="0">
+					</td>
+					<td rowspan="2">
+						<button onclick="covertToKm()">covert</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Kilometer:
+					</td>
+					<td>
+						<input type="number" readonly id="km" value="0">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+	<script type="text/javascript">
+		function covertToKm() {
+			let a = document.getElementById('meter').value;
+			document.getElementById('km').value = a / 1000;
+		} 
+	</script>
+</html>
